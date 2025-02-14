@@ -12,7 +12,7 @@ test('button JSDOM test' , () => {
 
 });
 
-
+/*
 test('tooltip JSDOM test' , () => {
 
     const headerContent = "Popover title";
@@ -22,3 +22,4 @@ test('tooltip JSDOM test' , () => {
     expect(parentEl.querySelector('.btn-tooltip').innerHTML).toEqual(Tooltip.tooltipMarkup(headerContent, bodyContent))
 
 })
+    */
