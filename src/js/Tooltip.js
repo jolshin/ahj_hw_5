@@ -35,7 +35,7 @@ export default class Tooltip {
     }
 
     removeTooltipMessage() {
-        const tooltipElement = this.parentEl.querySelector('.btn-tooltip')
+        const tooltipElement = this.parentEl.querySelector('.btn-tooltip');
         this.parentEl.querySelector('.wrapper').removeChild(tooltipElement);
     }
 

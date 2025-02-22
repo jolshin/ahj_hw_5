@@ -12,14 +12,17 @@ test('button JSDOM test' , () => {
 
 });
 
-/*
+
 test('tooltip JSDOM test' , () => {
 
     const headerContent = "Popover title";
     const bodyContent = "And here's some amazing content. It's very engaging. Right?";
     tooltipFactory.showTooltipMessage()
 
-    expect(parentEl.querySelector('.btn-tooltip').innerHTML).toEqual(Tooltip.tooltipMarkup(headerContent, bodyContent))
+    const recieved = parentEl.querySelector('.btn-tooltip').outerHTML.replaceAll("\n",'').trim()
+    const expected = Tooltip.tooltipMarkup(headerContent, bodyContent).replaceAll("\n",'').trim()
+
+    expect(recieved).toEqual(expected)
 
 })
-    */
+    
